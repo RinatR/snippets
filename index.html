@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+  	.btn {
+  	  position: relative;
+  	  padding: 10px;
+  	  height: 34px;
+  	  outline: none;
+  	  background-color: lightblue;
+  	  border: none;
+  	  text-transform: uppercase;
+  	  font-weight: bold;
+  	}
+
+  	.btn:after {
+  	  content: "";
+  	  position: absolute;
+  	  left: 100%;
+  	  top: 0;
+  	  width: 0;
+  	  height: 0;
+  	  border-top: 17px solid transparent;
+  	  border-bottom: 17px solid transparent;
+  	  border-left: 17px solid lightblue;
+  	  box-sizing: border-box;
+  	}
+	</style>
+</head>
+<body>
+	<button class="btn">This way</button>
+</body>
+</html>
